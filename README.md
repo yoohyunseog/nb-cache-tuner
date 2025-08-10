@@ -29,7 +29,7 @@ python ui_main.py
 ## Example output
 The following image is an example run with sample data.
 
-![Example Output](docs/example_output.png)
+![Example Output](image.png)
 
 ## How to use (with example data)
 1. Set `Interval(s)` and `Window(s)` (e.g., 1.0 / 60).
@@ -38,7 +38,7 @@ The following image is an example run with sample data.
    - Right: Top 10 NB_MAX/NB_MIN computed over a rolling window.
 3. Click `Rank/Spec` to append CPU/GPU specs and (on Windows) Top Processes (CPU).
 4. When both Top 10 lists are filled, the session may auto-finalize (`[Finalized: auto END]`).
-5. Click `Screenshot` to copy the current dashboard to the clipboard. Save to `docs/example_output.png` to display it in this README.
+5. Click `Screenshot` to copy the current dashboard to the clipboard. Save it as `image.png` in the project root to display it in this README.
 
 ## Interpreting the result (based on sample image)
 - **Top 10 NB_MAX (high)**: windows ranked by highest peak (e.g., idx 143  1.98). Helps spot spikes.
