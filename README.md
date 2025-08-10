@@ -32,3 +32,24 @@ Notes
 
 License
 - TBD
+
+## 예시 출력
+아래 이미지는 예시 데이터로 실행한 화면입니다.
+
+![예시 출력](docs/example_output.png)
+
+### 이 결과로 알 수 있는 것
+- Top 10 NB_MAX (high): 관측 구간별 최고점의 인덱스와 값  피크 타이밍 비교에 사용
+- Top 10 NB_MIN (low): 관측 구간별 최저점의 인덱스와 값  바닥 타이밍 비교에 사용
+- Elapsed(s): 세션 누적 시간  동일 조건에서 측정 길이 확인
+- AVG NB_MAX / AVG NB_MIN: 창 구간별 NB 지표 평균  장비/세션 간 성능 비교 지표
+- Top Processes (CPU): Windows에서 CPU 사용량 상위 10개 프로세스(가능할 때만)
+- CPU / GPU: 측정 환경 스펙(예: CPU 모델명, GPU 모델명)
+
+### 샘플 해석(첨부 이미지 기준)
+- NB_MAX 최고값 ≈ 1.98 (@ idx 143)
+- NB_MIN 최저값 ≈ 3.61 (@ idx 143)
+- 평균값: AVG NB_MAX ≈ 1.44, AVG NB_MIN ≈ 4.15
+- [Finalized: auto END] 표시는 Top 10 목록이 채워져 자동 종료되었음을 의미
+
+> 참고: 실제 값은 측정 환경과 기간에 따라 달라지며, NB_MAX/NB_MIN의 상대적 크기와 변동성을 통해 부하 패턴을 비교할 수 있습니다.
