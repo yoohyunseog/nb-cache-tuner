@@ -9,7 +9,7 @@ Features
 - Dual Qt backend: PyQt5 preferred, falls back to PySide6 automatically
 - Matplotlib embedding for smooth plotting
 - psutil optional (CPU sampling). Falls back to a synthetic signal if unavailable
-- Windows only: Top Processes section via PowerShell (non-blocking, best-effort)
+- Windows only: Top Processes section via PowerShell (best-effort)
 
 Requirements
 - Python 3.9+
