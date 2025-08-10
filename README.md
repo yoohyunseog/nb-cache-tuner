@@ -56,3 +56,21 @@ Tip: Comparing the relative level and volatility of NB_MAX vs NB_MIN makes it ea
 
 ## License
 TBD
+
+## Research Background and Sponsorship
+
+I originally built the NB code to read the temporal dynamics of YouTube views. The goal has been clear from day one: adapt extremely quickly to environmental changes while remaining interpretable.
+
+During analysis, I observed a consistent pattern across most datasets: NB_MIN tends to dominate. With GPT‑5 assistance, I inspected down to hardware-level signals, and NB_MIN still prevailed. This raises a counter‑question: what is the underlying cause?
+
+Two possibilities emerge from the data:
+1) Our measurement/normalization pipeline might be pressing down the ceiling while thickening the floor.
+2) Many real‑world systems might indeed operate with a thicker floor and clipped peaks.
+
+I do not claim certainty on which explanation is more correct yet.
+
+What is certain is that when balance is broken, thresholds, rankings, and resource allocation decisions become unstable. Based on NB observations, I am developing a Balance Recovery Algorithm (BRA) whose purpose is to self‑recalibrate so that the floor becomes thinner and the ceiling regains freedom.
+
+I do not promise a final answer. This code was born for YouTube view analysis and is still finding its direction through observation and experimentation. What I am confident about is the urgency and importance of the problem. That is why I am accepting sponsorships: your support directly funds experimentation, validation, documentation, and open tooling.
+
+- Sponsor the work: https://github.com/sponsors/yoohyunseog
